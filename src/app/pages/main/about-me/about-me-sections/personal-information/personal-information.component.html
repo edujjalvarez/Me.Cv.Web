@@ -1,0 +1,105 @@
+<div fxLayout="column" fxLayoutGap="24px" class="w-100-p">
+    <div
+      fxLayout.gt-sm="row"
+      fxLayout.lt-md="column"
+      class="w-100-p"
+      fxLayoutGap.gt-sm="28px"
+      fxLayoutGap.lt-md="16px"
+    >
+      <div
+        fxFlex.lt-md=""
+        fxFlex.gt-sm="50%"
+        class="text-justify"
+        ngClass.lt-md="mb-16"
+      >
+        <div fxLayout="column" class="w-100-p">
+          <table class="w-100-p">
+            <tr>
+              <th class="th-name truncate p-8"><span>{{'sections.personal_info.first_name' | translate}}</span></th>
+              <th class="th-desc truncate p-8"><span>Eduardo Juan José</span></th>
+            </tr>
+            <tr>
+              <th class="th-name truncate p-8"><span>{{'sections.personal_info.last_name' | translate}}</span></th>
+              <th class="th-desc truncate p-8"><span>Alvarez</span></th>
+            </tr>
+            <tr>
+              <th class="th-name truncate p-8"><span>{{'sections.personal_info.age' | translate}}</span></th>
+              <th class="th-desc truncate p-8">
+                <span>{{age}} {{'sections.personal_info.years' | translate}}</span>
+              </th>
+            </tr>
+            <tr>
+              <th class="th-name truncate p-8"><span>{{'sections.personal_info.marital_status' | translate}}</span></th>
+              <th class="th-desc truncate p-8">
+                <span>{{'sections.personal_info.marital_status_value' | translate}}</span>
+              </th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div fxFlex.lt-md="" fxFlex.gt-sm="50%" class="text-justify">
+        <div fxLayout="column" class="w-100-p">
+          <table class="w-100-p">
+            <tr>
+              <th class="th-name truncate p-8"><span>{{'sections.personal_info.nationality' | translate}}</span></th>
+              <th class="th-desc truncate p-8"><span>Argentino</span></th>
+            </tr>
+            <tr>
+              <th class="th-name truncate p-8"><span>{{'sections.personal_info.city' | translate}}</span></th>
+              <th class="th-desc truncate p-8"><span>Salta Capital</span></th>
+            </tr>
+            <tr>
+              <th class="th-name truncate p-8"><span>{{'sections.personal_info.postal_code' | translate}}</span></th>
+              <th class="th-desc truncate p-8"><span>4400</span></th>
+            </tr>
+            <tr>
+              <th class="th-name truncate p-8" #province>
+                <span
+                  [matTooltip]="
+                    province.scrollWidth > province.clientWidth
+                      ? countryStateTooltip
+                      : ''
+                  "
+                  >{{'sections.personal_info.country_state' | translate}}</span
+                >
+              </th>
+              <th class="th-desc truncate p-8"><span></span>Argentina / Salta</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div
+      fxLayout.gt-sm="row"
+      fxLayout.lt-md="column"
+      class="w-100-p"
+      fxLayoutGap.gt-sm="28px"
+      fxLayoutGap.lt-md="16px"
+    >
+      <div
+        fxFlex.lt-md=""
+        fxFlex.gt-sm="50%"
+        class="text-justify"
+        ngClass.lt-md="mb-16"
+      >
+        <div fxLayout="column" class="w-100-p">
+          <table class="w-100-p">
+            <tr>
+              <th class="th-name truncate p-8"><span>Email</span></th>
+              <th class="th-desc truncate p-8">
+                <span>edujjalvarez@gmail.com</span>
+              </th>
+            </tr>
+            <tr>
+              <th class="th-name truncate p-8"><span>{{'sections.personal_info.phone' | translate}}</span></th>
+              <th class="th-desc truncate p-8"><span>+54 387 5384412</span></th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div fxFlex.lt-md="" fxFlex.gt-sm="50%" class="text-justify">
+        <div fxLayout="column" class="w-100-p"></div>
+      </div>
+    </div>
+  </div>
+  

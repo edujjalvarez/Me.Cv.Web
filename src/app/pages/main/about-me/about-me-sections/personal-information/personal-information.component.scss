@@ -1,0 +1,25 @@
+$titleAndSubtitleColor: #333333;
+
+table {
+    border: 1px solid #efefef;
+    border-collapse: collapse;
+
+    th {
+        border: 1px solid #efefef;
+    }
+
+    .th-name {
+        width: 33.333%;
+        text-align: center;
+        color: $titleAndSubtitleColor;
+        font-size: 14px;
+    }
+
+    .th-desc {
+        width: 66.6666%;
+        text-align: center;
+        color: #666666;
+        font-weight: 400;
+        background-color: #fafafa;
+    }
+}

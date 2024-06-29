@@ -1,0 +1,16 @@
+.skill-subtitle {
+    writing-mode: vertical-rl;
+    border: 1px dashed;
+    text-align: end;
+    text-transform: uppercase;
+    padding: 24px 8px;
+
+    span {
+        text-transform: uppercase;
+        vertical-align: baseline;
+        text-decoration: none;
+        text-align: end;
+        color: #999999;
+        font-weight: 500;
+    }
+}

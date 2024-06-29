@@ -1,0 +1,29 @@
+$titleAndSubtitleColor: #333333;
+
+.main-container {
+    .section {
+        .header {
+            .bb-gray {
+                border-bottom: 1px solid #efefef;
+            }
+
+            .title-box {
+                border-bottom: 2px solid #cd5353;
+
+                span {
+                    color: $titleAndSubtitleColor;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .body {}
+    }
+}
+
+.html2canvas-container {
+    width: 3000px !important;
+    height: 3000px !important;
+}

@@ -1,0 +1,7 @@
+<div fxLayout="column" fxLayoutGap="12px" class="timeline mt-60">
+    <app-professional-experience [title]="exp.title | translate" [fromDate]="exp.fromDate" [toDate]="exp.toDate"
+        [description]="exp.description | translate" *ngFor="let exp of professionalExperiences"></app-professional-experience>
+    <span class="icon" fxLayoutAlign="center center">
+        <mat-icon>business_center</mat-icon>
+    </span>
+</div>

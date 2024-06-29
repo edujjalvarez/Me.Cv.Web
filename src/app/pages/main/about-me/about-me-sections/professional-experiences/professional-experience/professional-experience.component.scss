@@ -1,0 +1,62 @@
+.exp {
+    padding-left: 48px;
+    padding-top: 20px;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 12px;
+    position: relative;
+
+    .title {
+        h4 {
+            color: #333333;
+            font-weight: 600;
+            margin: 0;
+        }
+    }
+
+    .date-range {
+        .icon {
+            font-size: 12px;
+            width: 12px;
+            height: 12px;
+        }
+
+        .dates {
+            color: #666666;
+            margin: 0;
+            font-size: 12px;
+        }
+
+        .current-date {
+            background-color: #cd5353;
+            color: #ffffff;
+            padding: 1px 8px;
+            border-radius: 15px;
+        }
+
+        .antiquity {
+            font-size: 11px;
+        }
+    }
+
+    ::ng-deep .detail {
+        a {
+            color: #666666;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+}
+
+.exp:after {
+    background: #cd5353;
+    border: 3px solid #ffffff;
+    content: "";
+    height: 12px;
+    left: 10.5px;
+    position: absolute;
+    text-align: center;
+    top: 22px;
+    width: 12px;
+    border-radius: 100%;
+}

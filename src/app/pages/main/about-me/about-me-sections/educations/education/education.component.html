@@ -1,0 +1,16 @@
+<div fxLayout="column" class="exp w-100-p" fxLayoutGap="4px">
+    <div fxLayout="row" class="title w-100-p">
+        <h4>{{ title }}</h4>
+    </div>
+    <div fxLayout="row" class="date-range w-100-p" fxLayoutAlign="start center" fxLayoutGap="4px">
+        <mat-icon class="icon">calendar_today</mat-icon>
+        <h6 class="dates">{{ fromDate | localizedDate }}</h6>
+        <h6 class="dates">&nbsp;-&nbsp;</h6>
+        <h6 class="dates" [ngClass]="{ 'current-date': toDate == 'common.current' }">
+            {{ toDate != 'common.current' ? (toDate | localizedDate) : (toDate | translate) }}
+        </h6>
+    </div>
+    <div fxLayout="row" class="detail w-100-p text-justify">
+        <span [innerHtml]="description"></span>
+    </div>
+</div>

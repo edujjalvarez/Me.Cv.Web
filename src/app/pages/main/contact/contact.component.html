@@ -1,0 +1,105 @@
+<ngx-spinner type="ball-scale-multiple">
+    <p class="spinner-message">Sending...</p>
+</ngx-spinner>
+<div id="myCv" #myCv fxLayout="column" class="main-container w-100-p">
+    <div id="whoAmI" #whoAmI fxLayout="column" class="section w-100-p">
+        <div fxLayout="row" class="header w-100-p h-64 pt-32 pb-0" fxLayoutGap="8px">
+            <div fxLayout="row" class="w-100-p h-100-p" fxLayoutGap="8px">
+                <div fxFlex="32px" class="bb-gray h-100-p"></div>
+                <div class="title-box h-100-p">
+                    <span>Contact Form</span>
+                </div>
+                <div fxFlex class="bb-gray h-100-p"></div>
+            </div>
+        </div>
+        <div fxLayout="column" class="body w-100-p px-40 py-24">
+            <div fxLayout="column" class="w-100-p mt-32" fxLayoutGap="32px">
+                <div fxLayout="column" fxLayoutAlign="center center">
+                    <div fxLayout="column" ngClass.lt-md="w-100-p" ngClass.md="w-80-p" ngClass.lg="w-75-p"
+                        ngClass.xl="w-50-p" fxLayoutAlign="center center" [formGroup]="formGroup">
+                        <div fxLayout="column" class="w-100-p">Para más información no dudes en contactarme.</div>
+                        <br>
+                        <mat-form-field class="w-100-p" appearance="outline">
+                            <mat-label>Tu email</mat-label>
+                            <input matInput type="text" placeholder="Enter your email..." formControlName="to" />
+                            <button matSuffix mat-icon-button aria-label="Clear"
+                                (click)="formGroup.get('to')?.setValue('')"
+                                *ngIf="formGroup.get('to') && formGroup.get('to')?.value">
+                                <mat-icon>close</mat-icon>
+                            </button>
+                            <mat-error *ngIf="formGroup.get('to')?.hasError('required')">
+                                Email is <strong>required</strong>
+                            </mat-error>
+                            <mat-error *ngIf="
+                    !formGroup.get('to')?.hasError('required') &&
+                    formGroup.get('to')?.hasError('email')
+                  ">
+                                Please enter a valid email address
+                            </mat-error>
+                            <!-- <mat-error *ngIf="!formGroup.get('email')?.hasError('required') && formGroup.get('email')?.hasError('pattern')">
+                  Please enter a valid email address
+                </mat-error> -->
+                        </mat-form-field>
+                        <mat-form-field class="w-100-p" appearance="outline">
+                            <mat-label>Asunto</mat-label>
+                            <input matInput type="text" placeholder="Subject..." formControlName="subject" />
+                            <button matSuffix mat-icon-button aria-label="Clear"
+                                (click)="formGroup.get('subject')?.setValue('')" *ngIf="
+                    formGroup.get('subject') && formGroup.get('subject')?.value
+                  ">
+                                <mat-icon>close</mat-icon>
+                            </button>
+                            <mat-error *ngIf="formGroup.get('subject')?.hasError('required')">
+                                Subject is <strong>required</strong>
+                            </mat-error>
+                            <mat-error *ngIf="
+                    !formGroup.get('subject')?.hasError('required') &&
+                    formGroup.get('subject')?.hasError('minlength')
+                  ">
+                                Enter at least 6 characters
+                            </mat-error>
+                            <mat-error *ngIf="
+                    !formGroup.get('subject')?.hasError('required') &&
+                    formGroup.get('subject')?.hasError('maxlength')
+                  ">
+                                Enter up to 128 characters
+                            </mat-error>
+                        </mat-form-field>
+                        <mat-form-field class="w-100-p" appearance="outline">
+                            <mat-label>Mensaje</mat-label>
+                            <textarea matInput placeholder="Message..." formControlName="body" rows="10"></textarea>
+                            <button matSuffix mat-icon-button aria-label="Clear"
+                                (click)="formGroup.get('body')?.setValue('')" *ngIf="
+                    formGroup.get('body') && formGroup.get('body')?.value
+                  ">
+                                <mat-icon>close</mat-icon>
+                            </button>
+                            <mat-error *ngIf="formGroup.get('body')?.hasError('required')">
+                                Message is <strong>required</strong>
+                            </mat-error>
+                            <mat-error *ngIf="
+                    !formGroup.get('body')?.hasError('required') &&
+                    formGroup.get('body')?.hasError('minlength')
+                  ">
+                                Enter at least 6 characters
+                            </mat-error>
+                            <mat-error *ngIf="
+                    !formGroup.get('body')?.hasError('required') &&
+                    formGroup.get('body')?.hasError('maxlength')
+                  ">
+                                Enter up to 1024 characters
+                            </mat-error>
+                        </mat-form-field>
+                        <re-captcha class="mb-16" (resolved)="onResolved($event!)" formControlName="reCaptcha"
+                            siteKey="{{siteKey}}">
+                        </re-captcha>
+                        <button mat-raised-button color="primary" class="w-128" (click)="send()"
+                            [disabled]="!formGroup || formGroup.invalid">
+                            Enviar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

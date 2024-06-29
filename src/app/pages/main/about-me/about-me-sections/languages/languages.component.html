@@ -1,0 +1,47 @@
+<div fxLayout="column" fxLayoutGap="48px">
+    <!-- <div fxLayout="row" class="w-100-p" fxLayoutAlign="center center">
+        <div fxFlex>
+            <div fxLayout="column" class="w-100-p" fxLayoutGap="12px">
+                <app-skill [title]="skill.title" [color]="skill.color" [percent]="skill.percent"
+                    *ngFor="let skill of skills.spanish"></app-skill>
+            </div>
+        </div>
+        <div fxFlex="64px" fxLayoutAlign="end center">
+            <div class="skill-subtitle mt-32" [style.borderColor]="skills.spanish[0].color">
+                <span>Español (Nativo)</span>
+            </div>
+        </div>
+    </div>
+    <div fxLayout="row" class="w-100-p" fxLayoutAlign="center center">
+        <div fxFlex>
+            <div fxLayout="column" class="w-100-p" fxLayoutGap="12px">
+                <app-skill [title]="skill.title" [color]="skill.color" [percent]="skill.percent"
+                    *ngFor="let skill of skills.english"></app-skill>
+            </div>
+        </div>
+        <div fxFlex="64px" fxLayoutAlign="end center">
+            <div class="skill-subtitle mt-32" [style.borderColor]="skills.english[0].color">
+                <span>Inglés</span>
+            </div>
+        </div>
+    </div> -->
+    <div fxLayout="column" class="w-100-p" *ngFor="let langSkill of langSkills">
+        <div fxLayout="row" class="w-100-p" fxLayoutAlign="center center">
+            <div fxFlex>
+                <div class="text-justify mb-12">
+                    <span [innerHtml]="langSkill.skillTypeDescription | translate"></span>
+                </div>
+                <div fxLayout="column" class="w-100-p" fxLayoutGap="12px">
+                    <app-skill [title]="skill.title | translate" [color]="skill.color" [percent]="skill.percent"
+                        *ngFor="let skill of langSkill.skills"></app-skill>
+                </div>
+            </div>
+            <div fxFlex="64px" fxLayoutAlign="end center">
+                <div class="skill-subtitle mt-32" [style.borderColor]="langSkill.skillTypeColor">
+                    <span>{{langSkill.skillTypeTitle | translate}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="app-hl w-100-p mt-48"></div>
+    </div>
+</div>

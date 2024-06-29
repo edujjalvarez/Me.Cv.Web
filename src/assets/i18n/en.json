@@ -1,0 +1,116 @@
+{
+  "navbar": {
+    "about_me": "About me",
+    "contact": "Contact"
+  },
+  "common": {
+    "month": "1 month",
+    "months": "{{months}} months",
+    "year": "1 year",
+    "years": "{{years}} years",
+    "year_and_month": "1 year y 1 month",
+    "year_and_months": "1 year y {{months}} months",
+    "years_and_month": "{{years}} years y 1 month",
+    "years_and_months": "{{years}} years y {{months}} months",
+    "error": "Error",
+    "current": "Actual"
+  },
+  "sections": {
+    "about_me": {
+      "title": "About me",
+      "dev_role": "Full Stack Developer | .NET / .NET Core | Angular",
+      "cv_summary": "Software Engineer specialized in <strong>.NET</strong> and <strong>Angular</strong> technologies with 10 years of professional experience in the industry. Strong ability to analyze and solve problems to design robust, scalable, and secure systems by applying various <strong>software architectures</strong> that ensure system performance and scalability. I possess a solid understanding of <strong>software design patterns</strong>, <strong>object-oriented programming</strong>, and other software development principles such as <strong>S.O.L.I.D.</strong>; along with experience in agile project management. Proven ability to lead development teams and work closely with various stakeholders to deliver innovative software products on schedule. Proactive in adopting new technologies and <strong>agile methodologies</strong>; with a constant focus on continuous improvement. I am also familiar with <strong>DevOps</strong> concepts and continuous integration and deployment (<strong>CI/CD</strong>)."
+    },
+    "personal_info": {
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "age": "Age",
+      "years": "years old",
+      "marital_status": "Marital status",
+      "marital_status_value": "Single",
+      "nationality": "Nationality",
+      "city": "City",
+      "postal_code": "Postal code",
+      "country_state": "Country / State",
+      "phone": "Phone"
+    },
+    "hard_skills": {
+      "title": "Hard skills",
+      "skills": {
+        "backend_title": "Backend Development",
+        "backend_description": "My knowledge as a backend developer is strongly linked to the .NET ecosystem, especially in developing robust and scalable Web APIs based on .NET (versions 3.1, 6, 7, and 8), implementing advanced architectures such as Clean Architecture, Vertical Slice Architecture, N-Layer Architecture, and Domain-Driven Design (DDD) along with design patterns like S.O.L.I.D., Dependency Injection (DI), CQRS with the MediatR library, Caching, Publish/Subscribe with RabbitMQ and the MassTransit library, and Api Gateway.<br><br>I have worked extensively with various libraries and tools in the .NET ecosystem, including MediatR for mediation and handling commands and queries, FluentValidation for data validation, and Swagger for API documentation. Additionally, I have solid experience using ORMs such as Entity Framework Core and the LINQ query language for efficient data manipulation.<br><br>In projects I have participated in, I have also implemented caching mechanisms with Redis and asynchronous messaging systems with RabbitMQ, ensuring efficient communication between services. Regarding security and authentication, I have used JWT and managed identity providers like Identity Server 4 and Keycloak.<br><br>Lastly, I also have knowledge in containerization and orchestration of services with Docker and Docker-Compose.",
+        "frontend_title": "Frontend Development",
+        "frontend_description": "Regarding web application development, I have extensive experience using the Angular framework from version 10 onwards. These applications are structured with an N-Layer architecture, separating the data model layer from the service layer, which is responsible for fetching data from APIs and returning it to the presentation layer that displays and formats the data accordingly.<br><br>Among the technical aspects, I can mention the implementation of multiple modules and routing through lazy loading for optimized performance, both framework-specific and custom directives, pipes, RxJS, and Reactive Forms for reactive programming, multiple languages using i18n libraries, interceptors for handling HTTP requests and errors, route protection, screens and components using permission management libraries, and the implementation of responsive designs using Tailwind CSS and Material Design to ensure that applications are not only functional but also visually appealing and provide a good user experience.",
+        "mobile_title": "Mobile Development",
+        "mobile_description": "",
+        "databases_title": "Databases",
+        "databases_description": "",
+        "cloud_title": "Cloud",
+        "cloud_description": "",
+        "tools_title": "Tools",
+        "tools_description": ""
+      }
+    },
+    "soft_skills": {
+      "title": "Soft Skills",
+      "skills": {
+        "responsible": "Responsible and participatory",
+        "dev_teams_management": "Development teams management",
+        "self_learning": "Self-learning and new technologies"
+      }
+    },
+    "professional_experience": {
+      "title": "Professional Experience",
+      "pe8_title": "Software Engineer – Tecso",
+      "pe8_description": "<a href='https://tecso.coop' target='_blank'>Tecso</a> is the largest technology worker cooperative in Argentina where I currently have the opportunity to collaborate on projects based on .NET with Clean Architecture, DDD, CQRS, MediatR, FluentValidation, Repository Pattern, Generics, EF Core, Redis, RabbitMQ, PostgreSQL, and Docker & Docker-Compose.",
+      "pe7_title": "Full Stack Developer / Mobile Developer / Team Leader – LikeChuck",
+      "pe7_description": "<a href='https://www.likechuck.com' target='_blank'>LikeChuck</a> is a small software development company in Salta/Argentina, where I had the opportunity to collaborate on projects based on .NET and Angular with N-Layer Architecture, Repository Pattern, Generics, PostgreSQL, SQL Server, EF Core, and LINQ.",
+      "pe6_title": "Full Stack Developer – Government of the Province of Salta in Argentina",
+      "pe6_description": "Agency of Public Policy Information - Coordination of Linkage and Political Relations - Government of the Province of Salta - Argentina. Technologies: .NET and Angular with N-Layer Architecture, Repository Pattern, Generics, PostgreSQL, SQL Server, EF Core, and LINQ.",
+      "pe5_title": "Full Stack Developer – Government of the Province of Salta in Argentina",
+      "pe5_description": "Ministry of Early Childhood – Government of the Province of Salta – Argentina. Technologies: .NET and Angular with N-Layer Architecture, Repository Pattern, Generics, PostgreSQL, SQL Server, EF Core, and LINQ.",
+      "pe4_title": "Second Category Teaching Assistant in Mathematics I - National University of Salta in Argentina",
+      "pe4_description": "National University of Salta – Faculty of Economic Sciences – Resolution Nº 515/10 and 609/10.",
+      "pe3_title": "Second Category Teaching Assistant in Mathematical Analysis I - National University of Salta in Argentina",
+      "pe3_description": "National University of Salta – Regional Orán Campus – Resolution Nº 292/08.",
+      "pe2_title": "Paid Internship - National University of Salta in Argentina",
+      "pe2_description": "National University of Salta – Regional Orán Campus – Resolution Nº 004-08. Note: Performed tasks in the \"Computer Workshop\" section of the campus: PC repair, software installation, network maintenance, technical assistance to teachers, etc.",
+      "pe1_title": "Second Category Teaching Assistant in Mathematical Analysis I - National University of Salta in Argentina",
+      "pe1_description": "National University of Salta – Regional Orán Campus – Resolution Nº 232/07."
+    },
+    "education": {
+      "title": "Education",
+      "e2_title": "University Computer - National University of Salta in Argentina",
+      "e2_description": "National University of Salta - Regional Orán Campus - Degree: University Computer - Plan 09/97 (Intermediate Degree of the Bachelor's Degree in Systems Analysis) Certificate Nº: 464/10 - File Nº: 19200/09 (SRO) - Registration Nº: 9336.",
+      "e1_title": "Completed Secondary Education - Secondary School Nº 5089 in Orán/Salta/Argentina",
+      "e1_description": "Secondary School Nº 5089 - San Ramón de la Nueva Orán - Certificate: Humanities and Social Sciences with a focus on Tourism - Ministerial Resolution Nº 4118/00."
+    },
+    "courses": {
+      "title": "Cursos",
+      "c5_title": ".NET 8 Microservices: DDD, CQRS, Vertical/Clean Architecture – Udemy",
+      "c5_description": "Microservices Development on .NET 8 using ASP.NET Web API, Docker, RabbitMQ, MassTransit, gRPC, Yarp Gateway, Redis, SqlServer. <a href='https://www.udemy.com/certificate/UC-9c7ff6be-3662-435c-9590-e40fc6fa917f/' target='_blank'>View certificate here</a>",
+      "c4_title": "Course Assistant for Application Development with Visual Studio .NET - National University of Salta in Argentina",
+      "c4_description": "National University of Salta - Regional Orán Campus - September, October, and November 2009 - According to Resolution Nº 250/09.",
+      "c3_title": "Course Assistant for Database Development with Microsoft SQL Server 2005 - National University of Salta in Argentina",
+      "c3_description": "National University of Salta - Regional Orán Campus - August-September 2009 - According to Resolution Nº 255/09.",
+      "c2_title": "Development of Mobile Applications with .NET and SQL Server Security - National University of Salta in Argentina",
+      "c2_description": "National University of Salta - Regional Orán Campus - 20/09/2008 to 08/11/2008 - Duration: 40 hours - Resolution Nº 245/08.",
+      "c1_title": "Development of Web Applications with ASP.NET - National University of Salta in Argentina",
+      "c1_description": "National University of Salta - Regional Orán Campus - 27/10/2007 to 30/11/2007 - Resolution Nº 213/07."
+    },
+    "languages": {
+      "title": "Languages",
+      "skills": {
+        "languages_title": "Languages",
+        "languages_description": "",
+        "english": "English Level B1",
+        "spanish": "Spanish (native)"
+      }
+    },
+    "about_this_project": {
+      "title": "About this project",
+      "description": "This project was developed using the following technologies:<br><br><strong>Backend</strong><br><br>The purpose of the backend of this project is to validate that the token generated by Google reCAPTCHA is a valid token and to send the contact email. Although these two functionalities are simple to implement, I decided to structure the project using the following features so that its source code serves as supporting documentation of my knowledge:<br><ul><li>.NET 8</li><li>Clean Architecture</li><li>Domain-Driven Design (DDD)</li><li>CQRS</li><li>MediatR</li><li>Exception Handlers</li><li>Logging Behaviors</li><li>Validation Behaviors</li><li>FluentValidation</li><li>DI</li><li>Mapster</li><li>Swagger</li></ul>Source code on GitHub: <a href='https://github.com/edujjalvarez/Me.Cv.git' target='_blank'>Me.Cv</a><br><br><strong>Frontend</strong><br><br>The frontend was developed using the following features:<br><ul><li>Angular 16</li><li>TypeScript</li><li>SASS (.scss)</li><li>Angular Flex-Layout (currently deprecated, will soon be migrated to Tailwind CSS)</li><li>Material Icons</li><li>Moment.js</li><li>i18n (ngx-translate)</li><li>Pipes</li><li>Google reCAPTCHA</li></ul>Source code on GitHub: <a href='https://github.com/edujjalvarez/Me.Cv.Web.git' target='_blank'>Me.Cv.Web</a><br><br><strong>Deployment</strong><br><br>The deployment was carried out on a Debian 12 server (on Digital Ocean) with Nginx, Let's Encrypt for SSL certificate management, and Nic.Ar to configure the site's domain.<br><br><strong>Version Control System</strong><br><br>GIT and GitHub"
+    }
+  },
+  "all_rights_reserved": "All rights reserved"
+}

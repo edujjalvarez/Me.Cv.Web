@@ -1,0 +1,65 @@
+@import "app/app.helper.scss";
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: #efefef;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    color: #999999;
+}
+
+.w-100-p {
+    width: 100%;
+}
+
+.h-100-p {
+    height: 100%;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.truncate {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mat-snack-bar-bg-success {
+    background-color: #4caf50 !important;
+    color: white !important;
+}
+
+.mat-snack-bar-bg-info {
+    background-color: #2196f3 !important;
+    color: white !important;
+}
+
+.mat-snack-bar-bg-error {
+    background-color: #f44336 !important;
+    color: white !important;
+}
+
+.mat-snack-bar-bg-warning {
+    background-color: #ff8f00 !important;
+    color: white !important;
+}
+
+.app-hl {
+    height: 1px;
+    background-color: #bcb9b9;
+}

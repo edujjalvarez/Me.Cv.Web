@@ -1,0 +1,21 @@
+<div fxLayout="column" fxLayoutGap="48px">
+  <div fxLayout="column" class="w-100-p" *ngFor="let softSkill of softSkills">
+      <div fxLayout="row" class="w-100-p" fxLayoutAlign="center center">
+          <div fxFlex>
+              <!-- <div class="text-justify mb-12">
+                  <span [innerHtml]="hardSkill.skillTypeDescription | translate"></span>
+              </div> -->
+              <div fxLayout="column" class="w-100-p" fxLayoutGap="12px">
+                  <app-skill [title]="skill.title | translate" [color]="skill.color" [percent]="skill.percent"
+                      *ngFor="let skill of softSkill.skills"></app-skill>
+              </div>
+          </div>
+          <!-- <div fxFlex="64px" fxLayoutAlign="end center">
+              <div class="skill-subtitle mt-32" [style.borderColor]="hardSkill.skillTypeColor">
+                  <span>{{hardSkill.skillTypeTitle | translate}}</span>
+              </div>
+          </div> -->
+      </div>
+      <div class="app-hl w-100-p mt-48"></div>
+  </div>
+</div>

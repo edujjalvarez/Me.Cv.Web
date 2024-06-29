@@ -1,0 +1,7 @@
+<div fxLayout="column" fxLayoutGap="12px" class="timeline mt-60">
+    <app-education [title]="education.title | translate" [fromDate]="education.fromDate" [toDate]="education.toDate"
+        [description]="education.description | translate" *ngFor="let education of educations"></app-education>
+    <span class="icon" fxLayoutAlign="center center">
+        <mat-icon>school</mat-icon>
+    </span>
+</div>

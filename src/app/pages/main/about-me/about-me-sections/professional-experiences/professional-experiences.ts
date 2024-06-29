@@ -1,0 +1,58 @@
+export const professionalExperiences = [
+  {
+    id: 8,
+    title: 'sections.professional_experience.pe8_title',
+    fromDate: '2024-03-18',
+    toDate: 'common.current',
+    description: `sections.professional_experience.pe8_description`,
+  },
+  {
+    id: 7,
+    title: 'sections.professional_experience.pe7_title',
+    fromDate: '2021-11-21',
+    toDate: '2024-03-15',
+    description: `sections.professional_experience.pe7_description`,
+  },
+  {
+    id: 6,
+    title: 'sections.professional_experience.pe6_title',
+    fromDate: '2020-02-01',
+    toDate: '2021-11-20',
+    description: `sections.professional_experience.pe6_description`,
+  },
+  {
+    id: 5,
+    title: 'sections.professional_experience.pe5_title',
+    fromDate: '2015-02-01',
+    toDate: '2020-02-29',
+    description: `sections.professional_experience.pe5_description`,
+  },
+  {
+    id: 4,
+    title: 'sections.professional_experience.pe4_title',
+    fromDate: '2010-08-01',
+    toDate: '2011-08-31',
+    description: `sections.professional_experience.pe4_description`,
+  },
+  {
+    id: 3,
+    title: 'sections.professional_experience.pe3_title',
+    fromDate: '2008-10-01',
+    toDate: '2009-07-31',
+    description: `sections.professional_experience.pe3_description`,
+  },
+  {
+    id: 2,
+    title: 'sections.professional_experience.pe2_title',
+    fromDate: '2008-02-01',
+    toDate: '2008-12-31',
+    description: `sections.professional_experience.pe2_description`,
+  },
+  {
+    id: 1,
+    title: 'sections.professional_experience.pe1_title',
+    fromDate: '2007-11-01',
+    toDate: '2008-07-31',
+    description: `sections.professional_experience.pe1_description`,
+  },
+];

@@ -1,0 +1,24 @@
+.skill-container {
+    .skill-title {
+        margin-bottom: 8px !important;
+        // text-transform: uppercase;
+        color: #666666;
+    }
+
+    .skill-progress-bar {
+        width: 100%;
+        background-color: transparent;
+        padding: 0px;
+        border-radius: 15px;
+        border: 1px solid;
+
+        .skill-progress-bar-fill {
+            display: block;
+            height: 16px;
+            background-color: #e7b508;
+            border-radius: 15px;
+            transition: width 500ms ease-in-out;
+            margin: -1px;
+        }
+    }
+}
